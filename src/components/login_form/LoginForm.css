@@ -1,0 +1,65 @@
+.login-page-container{
+    display: flex;
+    background-color: #03032c;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-container{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+.login-form-container>h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a0a98;
+    font-size: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.login-page-content{
+    display: flex;
+    background-color: darkcyan;
+    flex-direction: row;
+}
+.login-page-content>section:nth-child(1){
+  background-color: #ffffff;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.login-page-content>section:nth-child(2){
+    background-color: #ffffff;
+    flex: 6;
+}
+.user-div-icon{
+    width: 40px;
+    height: 40px;
+    /*background-color: #260909;*/
+    position: relative;
+    bottom: 21px;
+    background: url("../login_form/login_form_icons/email_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.password-div-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #fce2e2;
+    position: relative;
+    top: 26px;
+    background: url("../login_form/login_form_icons/password_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
