@@ -1,9 +1,10 @@
 import React from 'react';
 import videoFile from "../login_form/login_form_video/proposing.mp4";
 import {Button, Form, Input} from "antd";
-import {LoadingOutlined} from "@ant-design/icons";
+import {GoogleOutlined, LoadingOutlined, LockOutlined, UserAddOutlined} from "@ant-design/icons";
 
 import './SignupFormComp.css'
+import {Link} from "react-router-dom";
 
 function SignupFormComp(props) {
     return (
@@ -22,7 +23,7 @@ function SignupFormComp(props) {
                         <Form layout='vertical' className='signup-form'>
 
                             <Form.Item label='user name'>
-                                <Input/>
+                                <Input prefix={<UserAddOutlined className='form-icons'/>}/>
                             </Form.Item>
 
                             <Form.Item
@@ -39,7 +40,7 @@ function SignupFormComp(props) {
                                     },
                                 ]}
                             >
-                                <Input />
+                                <Input prefix={<GoogleOutlined className='form-icons'/>}/>
                             </Form.Item>
 
                             <Form.Item
@@ -53,7 +54,7 @@ function SignupFormComp(props) {
                                 ]}
                                 hasFeedback
                             >
-                                <Input.Password />
+                                <Input.Password prefix={<LockOutlined className='form-icons'/>}/>
                             </Form.Item>
 
                             <Form.Item
@@ -76,7 +77,7 @@ function SignupFormComp(props) {
                                     }),
                                 ]}
                             >
-                                <Input.Password />
+                                <Input.Password prefix={<LockOutlined className='form-icons'/>}/>
                             </Form.Item>
 
 
@@ -85,7 +86,11 @@ function SignupFormComp(props) {
                     </div>
                     <div className='signup-footer-page'>
                         <div className='signup-button-div'>
-                            <Button type='link' className='signup-button'>sign up</Button>
+                            <Button type='link' className='signup-button'>sign up<LoadingOutlined className='signup-button-loading-icon'/></Button>
+                        </div>
+                        <div className='footer-register'>
+                            <p className='already-member'>Already a member? </p> <Link className='signin-now' to='/signin' >SignIn Now</Link>
+
                         </div>
                     </div>
                 </div>

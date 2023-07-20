@@ -3,20 +3,20 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+
 }
 .signup-form-container{
     width: 400px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     border-radius: 10px;
     padding: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: green;
+
 }
 
 /*-------------------------- header style --------------------------------------*/
 .header-signup-page{
-    background-color: #a90000;
+
 }
 .header-signup-h1{
     font-family: Arial;
@@ -29,20 +29,32 @@
 
 .signup-form-div{
     padding: 10px 20px 1px 20px;
-    background-color: black;
+
 }
 
 .signup-form{
-    background-color: purple;
+
 }
+
+.form-icons{
+    font-weight: bold;
+    color: #0a0a98;
+    font-size: 17px;
+}
+
+.signup-button-loading-icon{
+    font-weight: bold;
+    color: white;
+}
+
 /*---------------------- signup footer style ----------------------*/
 .signup-footer-page{
-    background-color: darkcyan;
+
 }
 .signup-button-div{
     display: flex;
     justify-content: center;
-    background-color: blue;
+
 }
 .signup-button{
     background-color: #0a0a98;
@@ -51,6 +63,26 @@
     font-weight: bold;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 30%;
+}
+
+.footer-register{
+
+    margin-top: 9px;
+}
+
+.already-member{
+    color: black;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 14px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.signin-now{
+    text-decoration: none;
+    margin-left: 4px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*------------------- this style for video background ---------------------*/

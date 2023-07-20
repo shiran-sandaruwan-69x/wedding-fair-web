@@ -3,11 +3,12 @@ import BackgroundAudioPlayer from "./components/login_form/backgroud_youtube_pla
 import LoginFormComp from "./components/login_form/LoginFormComp";
 import BannerFormComp from "./components/banner_form/BannerFormComp";
 import SignupFormComp from "./components/signup_form/SignupFormComp";
+import LoginRouters from "./routers/LoginRouters";
 
 function App() {
   return (
     <div className="App">
-      <SignupFormComp/>
+      <LoginRouters/>
     </div>
   );
 }

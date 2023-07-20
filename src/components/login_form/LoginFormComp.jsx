@@ -5,6 +5,7 @@ import './LoginForm.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import videoFile from './login_form_video/proposing.mp4'
 import BannerFormComp from "../banner_form/BannerFormComp";
+import {Link} from "react-router-dom";
 
 
 const LoginForm = () => {
@@ -101,7 +102,7 @@ const LoginForm = () => {
                                <div className='login-form-insagram-iocn'></div>
                            </div>
                            <div className='footer-register'>
-                               <p className='not-member'>Not a member? </p> <a className='register-now' href="#"> Register Now</a>
+                               <p className='not-member'>Not a member? </p> <Link className='register-now' to='/signup'>Register Now</Link>
                            </div>
                        </section>
                    </div>
