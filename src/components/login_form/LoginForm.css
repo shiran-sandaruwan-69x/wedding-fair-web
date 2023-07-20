@@ -1,18 +1,27 @@
 .login-page-container{
     display: flex;
-    background-color: #03032c;
     height: 100vh;
     justify-content: center;
     align-items: center;
+
 }
 
 .login-form-container{
     width: 400px;
-    background-color: #ffffff;
+    backdrop-filter: blur(20px);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.login-form-hello{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .login-form-container>h2{
     text-align: center;
     margin-bottom: 20px;
@@ -23,11 +32,10 @@
 
 .login-page-content{
     display: flex;
-    background-color: darkcyan;
     flex-direction: row;
 }
 .login-page-content>section:nth-child(1){
-  background-color: #ffffff;
+
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -36,7 +44,7 @@
     position: relative;
 }
 .login-page-content>section:nth-child(2){
-    background-color: #ffffff;
+
     flex: 6;
 }
 .user-div-icon{
@@ -54,12 +62,149 @@
 .password-div-icon{
     width: 40px;
     height: 40px;
-    background-color: #fce2e2;
+
     position: relative;
     top: 26px;
     background: url("../login_form/login_form_icons/password_icon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*------------------- this style for video background ---------------------*/
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/*--------------- this style for login form footer section -------------------*/
+
+.login-form-footer{
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    position: relative;
+}
+.recoveryPassword{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: Arial;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.recoveryPassword>a{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.login-div{
+    display: flex;
+    flex: 1;
+    margin-top: 9px;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+}
+.login-div>button{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: #0a0a98;
+    font-weight: bold;
+}
+.login-btn{
+    font-family: Arial;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+}
+.footer-continue-with{
+    flex: 1;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+
+    font-family: Arial;
+    margin-top: 15px;
+    position: relative;
+}
+.footer-continue-with>h2{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.footer-login-options{
+    flex: 1;
+    display: flex;
+
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer-login-options>div{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.login-form-google-icon{
+    background: url("../login_form/login_form_icons/google_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.login-form-fakebook-iocn{
+    background: url("../login_form/login_form_icons/facebook_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-form-insagram-iocn{
+    background: url("../login_form/login_form_icons/instagr_icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+}
+.footer-register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+.register-now{
+    text-decoration: none;
+    margin-left: 4px;
+    color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.not-member{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }

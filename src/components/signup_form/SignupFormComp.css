@@ -1,0 +1,77 @@
+.signup-page-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+.signup-form-container{
+    width: 400px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: green;
+}
+
+/*-------------------------- header style --------------------------------------*/
+.header-signup-page{
+    background-color: #a90000;
+}
+.header-signup-h1{
+    font-family: Arial;
+    color: #0a0a98;
+    font-size: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+}
+/*--------------------------- signup form style----------------------------- */
+
+.signup-form-div{
+    padding: 10px 20px 1px 20px;
+    background-color: black;
+}
+
+.signup-form{
+    background-color: purple;
+}
+/*---------------------- signup footer style ----------------------*/
+.signup-footer-page{
+    background-color: darkcyan;
+}
+.signup-button-div{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+.signup-button{
+    background-color: #0a0a98;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 30%;
+}
+
+/*------------------- this style for video background ---------------------*/
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
