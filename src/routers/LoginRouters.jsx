@@ -5,6 +5,7 @@ import SignupFormComp from "../components/signup_form/SignupFormComp";
 import withLoading from "./loading_form/LoadingFormRouters";
 import LoadingFormRouters from "./loading_form/LoadingFormRouters";
 import {Spin} from "antd";
+import MainPageComp from "../pages/main_page/MainPageComp";
 
 const LazyLoginFormComp = React.lazy(() => import('../routers/loading_form/LoadingFormRouters'));
 
